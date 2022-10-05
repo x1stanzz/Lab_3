@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,32 +12,32 @@ namespace Lab_3
         {
             Console.WriteLine("Введіть координати точки");
             Console.Write("x = ");
-            int x = Convert.ToInt32(Console.ReadLine());
+            int x = int.Parse(Console.ReadLine());
             Console.Write("y = ");
-            int y = Convert.ToInt32(Console.ReadLine());
+            int y = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Введіть координати лівої верхньої вершини");
             Console.Write("x1 = ");
-            int x1 = Convert.ToInt32(Console.ReadLine());
+            int x1 = int.Parse(Console.ReadLine());
             Console.Write("y1 = ");
-            int y1 = Convert.ToInt32(Console.ReadLine());
+            int y1 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Введіть координати правої нижньої вершини");
             Console.Write("x2 = ");
-            int x2 = Convert.ToInt32(Console.ReadLine());
+            int x2 = int.Parse(Console.ReadLine());
             if (x1 >= x2)
             {
                 Console.WriteLine("Не коректні дані! Спробуйте знову.");
                 Console.Write("x2 = ");
-                x2 = Convert.ToInt32(Console.ReadLine());
+                x2 = int.Parse(Console.ReadLine());
             }
             Console.Write("y2 = ");
-            int y2 = Convert.ToInt32(Console.ReadLine());
+            int y2 = int.Parse(Console.ReadLine());
             if (y1 <= y2)
             {
                 Console.WriteLine("Не коректні дані! Спробуйте знову.");
                 Console.Write("y2 = ");
-                y2 = Convert.ToInt32(Console.ReadLine());
+                y2 = int.Parse(Console.ReadLine());
             }
 
             bool result;
